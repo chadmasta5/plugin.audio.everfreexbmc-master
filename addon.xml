@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.audio.Everfree" name="Everfree Radio" version="0.0.1a" provider-name="chadmasta5">
+<addon id="plugin.audio.Everfree" name="Everfree Radio" version="0.0.1b" provider-name="chadmasta5">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="xbmc.json" version="6.0.0"/>
@@ -10,7 +10,7 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="en">Listen to Everfree Radio</summary>
     <description lang="en">Brony network featuring news, radio station, pony music, convention streams, programs and interviews!</description>
-    <disclaimer lang="en"></disclaimer>
+    <disclaimer lang="en">THIS ADDON IS NOT OFFICIAL AND IS NOT SUPPORTED OR DEVELOPED BY EVERFREE NETWORK. I TAKE NO OWNERSHIP OF ANY CONTENT IN THIS ADDON.</disclaimer>
     <language>
     </language>
     <platform>all</platform>
