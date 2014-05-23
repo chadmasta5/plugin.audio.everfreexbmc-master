@@ -1,15 +1,14 @@
-import sys
-import xbmcgui
-import xbmcplugin
+import xbmc, xbmcgui, xbmcaddon
 
-addon_handle = int(sys.argv[1])
+addon = xbmcaddon.Addon('plugin.audio.everfree.xbmc')
+title = addon.getAddonInfo('name')
+icon = li.setIconImage('http://i60.tinypic.com/2hnozec.png')
+link = 'http://chadmasta5.weebly.com/uploads/6/0/1/9/6019696/listen.pls'
 
-xbmcplugin.setContent(addon_handle, 'audio')
-
-setProperty('fanart_image', 'http://i59.tinypic.com/b669vt.jpg')
-url = 'http://chadmasta5.weebly.com/uploads/6/0/1/9/6019696/listen.pls'
-li = xbmcgui.ListItem('Listen', iconImage='http://i60.tinypic.com/2hnozec.png')
+ 
+li = xbmcgui.ListItem(label=title, iconImage=icon, thumbnailImage=icon, path=link)
+li.setInfo(type='Audio', infoLabels={ "Title": Everfree Radio })
+li.setProperty('IsPlayable', 'true')
 li.setProperty('fanart_image', 'http://i59.tinypic.com/b669vt.jpg')
-xbmcplugin.addDirectoryItem(handle=addon_handle, url=url, listitem=li)
 
-xbmcplugin.endOfDirectory(addon_handle)
+xbmc.Player().play(item=link, listitem=li)
