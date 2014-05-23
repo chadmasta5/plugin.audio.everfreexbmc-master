@@ -4,8 +4,6 @@ import xbmcplugin
 
 addon_handle = int(sys.argv[1])
 
-setProperty('fanart_image', 'http://i59.tinypic.com/b669vt.jpg')
-
 xbmcplugin.setContent(addon_handle, 'audio')
 
 url = 'http://chadmasta5.weebly.com/uploads/6/0/1/9/6019696/listen.pls'
